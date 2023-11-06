@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(Quicksand-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: #465ca8;
+}
+
+#profilepicture{
+    height:9%; 
+    width: 9%;
+}
+
+#profilediv{
+    padding-top: 50px;
+}
+
+#navmenu{
+    font-family: Quicksand;
+    font-weight: 10px;
+}
+
+#pictureabout{
+    height: 95%;
+    width: 100%;
+}
+
+.nav-item{
+    color: white;
+    
+} 
+
+#item{
+    color:white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#line{
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+}
+
+#textcontainer{
+    margin-bottom: -50px;
+}
+
+#textwall{
+    font-size: 30px;
+    font-family: Quicksand;
+    color:white;
+    
+}
+
+#paragraphbreak{
+    border-bottom: 3px dotted white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.itemhover{
+    display:inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position:relative;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transform: translateZ(0);
+    transition-duration: .3s;
+    transition-property:transform;
+    text-decoration: none;
+}
+
+.itemhover::before{
+    position:absolute;
+    pointer-events: none;
+    z-index:-1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    text-decoration: none;
+}
+.itemhover:hover, .itemhover:active, .itemhover:focus{
+    transform: translateY(-5px);
+    text-decoration: none;
+  }
+
+.itemhover:hover:before, .itemhover:active:before, .itemhover:focus:before{
+    opacity: 1;
+    transform: translateY(-5px);
+    text-decoration: none;
+  }
+
+.footer{
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200%;
+    height: 100px; 
+}  
+
+section{
+    font-family: Quicksand;
+}
+
+h1{
+    font-family: Quicksand;
+    color: white;
+}
+#links{
+    font-family: Quicksand;
+    color: white;
+    font-size: 30px;
+}
+p{
+    font-family: Quicksand;
+    color: white;
+}   

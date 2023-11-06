@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    var redBox = null;
+    var movementAmount = 0;
+</script>
+
+<script type="text/javascript" src="custom.js"></script>
+
+<style>
+    #RedBox
+    {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+</style>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<body>
+    <div class="d-flex overflow-hidden">
+        <div class ="sidebar-heading border-bottom gray">
+            <p class= "jstutorial">
+                JS TUTORIAL 
+            </p>
+            <div class = "list-group list-group-flush overflow-auto">
+                <div>
+                </div>
+                <a class="list-group-item" onclick = "arithmethicoperator();">
+                    Aritmethic Operators
+                    </a>
+                    <a class="list-group-item" onclick = "assignmentoperator();">
+                        Assignment Operators
+                    </a>
+                    <a class="list-group-item" onclick = "bitwiseoperator();">
+                        Bitwise Operators
+                    </a>     
+                    <a class="list-group-item" onclick = "comments();">
+                        Comments
+                    </a>     
+                    <a class="list-group-item" onclick = "comparisonoperator();">
+                        Comparison Operators
+                    </a>
+                    <a class="list-group-item" onclick = "conditionaloperator();">
+                        Conditional Operators
+                    </a>     
+                    <a class="list-group-item" onclick = "consoleoutput();">
+                        Console Output
+                    </a>     
+                    <a class="list-group-item" onclick = "setcookie();getcookie();">
+                        Cookies
+                    </a>       
+                    <a class="list-group-item" href="dialogbox.html">
+                        Dialog Box
+                    </a>     
+                    <a class="list-group-item" onclick = "dowhileloop();">
+                        Do While Loop
+                    </a>         
+                    <a class="list-group-item" href="events.html">
+                       Events
+                    </a>     
+                    <a class="list-group-item" onclick = "forinloop();">
+                        For In Loop
+                    </a>     
+                    <a class="list-group-item" onclick = "assignment();">
+                        For Loop
+                    </a>     
+                    <a class="list-group-item" onclick = "functions();">
+                        Functions
+                    </a>    
+                    <a class="list-group-item" onclick = "logicaloperator();">
+                        Logical Operators
+                    </a>   
+                    <a class="list-group-item" onclick = "loopadvanced();">
+                        Loops Advanced
+                    </a>     
+                    <a class="list-group-item" onclick = "noscript();">
+                        noscript Tag
+                    </a>     
+                    <a class="list-group-item" href="printpage.html">
+                        Printing the Page
+                    </a>     
+                    <a class="list-group-item" onclick = "promptbox();">
+                        Prompt Box
+                    </a>     
+                    <a class="list-group-item" href="redirectpage.html">
+                        Redirect Page
+                    </a>     
+                    <a class="list-group-item" onclick = "strictmode();">
+                        Strict Mode
+                    </a>     
+                    <a class="list-group-item" onclick = "switchfunction();">
+                        Switch Statement
+                    </a> 
+                    <a class="list-group-item" onclick = "typeofoperator();">
+                        typeOf Operator
+                    </a> 
+                    <a class="list-group-item" onclick = "variables();">
+                        Variables
+                    </a> 
+                    <a class="list-group-item" onclick = "voidfunction();">
+                        void Operator
+                    </a> 
+                    <a class="list-group-item" onclick = "whileloop();">
+                        While Loop
+                    </a> 
+                    <a class="list-group-item" onclick = "arrays();">
+                        Arrays
+                    </a> 
+                    <a class="list-group-item" onclick = "boolean();">
+                        Boolean
+                    </a> 
+                    <a class="list-group-item" onclick = "date();">
+                        Date
+                    </a> 
+                    <a class="list-group-item" href="HTMLDOM.html">
+                        HTML DOM
+                    </a> 
+                    <a class="list-group-item" onclick = "math();">
+                        Math
+                    </a> 
+                    <a class="list-group-item" onclick = "number();">
+                        Number
+                    </a> 
+                    <a class="list-group-item" onclick = "regularexpressions();">
+                        Regular Expressions
+                    </a> 
+                    <a class="list-group-item" onclick = "string();">
+                        String
+                    </a> 
+                    <a class="list-group-item" onclick = "classinheritance();">
+                        Class Inheritance
+                    </a> 
+                    <a class="list-group-item" onclick = "functionclasses();">
+                        Function Classes
+                    </a> 
+                    <a class="list-group-item" onclick = "instanceofoperator();">
+                        Instanceof Operator
+                    </a> 
+                    <a class="list-group-item" onclick = "methodoverriding();">
+                        Method Overriding
+                    </a> 
+                    <a class="list-group-item" onclick = "simpleclass();">
+                        Simple Class
+                    </a> 
+                     <a class="list-group-item" onclick = "staticfunctions();">
+                        Static Functions
+                    </a> 
+                    <a class="list-group-item" onclick = "superkeyword();">
+                        Super Keyword
+                    </a> 
+                    <a class="list-group-item" onclick = "variableclasses();">
+                        Variable Classes
+                    </a> 
+                    <a class="list-group-item" onclick = "ajax();">
+                        Ajax
+                    </a> 
+                    <a class="list-group-item" href="animation.html">
+                        Animation
+                    </a> 
+                    <a class="list-group-item" onclick = "anonymousfunction();">
+                        Anonymous Function
+                    </a> 
+                    <a class="list-group-item" onclick = "arrowlambdafunction();">
+                        Arrow & Lambda Function
+                    </a> 
+                    <a class="list-group-item" onclick = "blockscope();">
+                        Block Scope
+                    </a> 
+                    <a class="list-group-item" onclick = "browsernavigator();">
+                        Browse Navigator
+                    </a> 
+                    <a class="list-group-item" onclick = "errorhandling();">
+                        Error Handling
+                    </a> 
+                    <a class="list-group-item" onclick = "constructor();">
+                        Function Constructor
+                    </a> 
+                    <a class="list-group-item" onclick = "hoisting();">
+                        Function Hoisting
+                    </a> 
+                    <a class="list-group-item" onclick = "generatorfunction();">
+                        Generator Functions
+                    </a> 
+                    <a class="list-group-item" href="imagemap.html">
+                        Image Map
+                    </a> 
+                    <a class="list-group-item" onclick = "immediatelyinvokedfunctionexpression();">
+                        Immediately Invoked Function Expressions
+                    </a> 
+                    <a class="list-group-item" onclick = "javascripturi();">
+                        JavaScript URI
+                    </a> 
+                    <a class="list-group-item" onclick = "looplabel();">
+                        Loop Labels
+                    </a> 
+                    <a class="list-group-item" onclick = "mapcollection();">
+                        Map Collection
+                    </a> 
+                    <a class="list-group-item" href="modules.html">
+                        Modules
+                    </a> 
+                    <a class="list-group-item" href="multimedia.html">
+                        Multimedia
+                    </a> 
+                    <a class="list-group-item" onclick = "promises();">
+                        Promises
+                    </a> 
+                    <a class="list-group-item" onclick = "setcollection();">
+                        Set Collection
+                    </a> 
+                    <a class="list-group-item" onclick = "templateliterals();">
+                        Template Literals
+                    </a> 
+                    <a class="list-group-item" href="validation.html">
+                        Validation
+                    </a> 
+                    <a class="list-group-item" onclick = "variablehoisting();">
+                        Variable Hoisting
+                    </a> 
+    </div>
+</div>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div id="RedBox"></div>
+
+		    <script type="text/javascript">
+			redBox = document.getElementById("RedBox");
+
+			var animation;
+
+			function EpicMovement()
+			{
+				movementAmount += 1;
+				redBox.style.left = movementAmount + 'px';
+				console.log(redBox.style.left);
+				animation = setTimeout(EpicMovement, 1);
+			}
+
+			EpicMovement();
+
+			//redBox.style.left = "200px";
+		</script>
+		<noscript>JS not supported</noscript>
+</body>
+</html>

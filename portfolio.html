@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfileWebsite</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<div class="d-flex justify-content-center" id="profilediv">
+<img class="rounded-circle shadow p-2 mb-4 bg-white rounded" id="profilepicture" src="img/profilepicture.jpeg">
+</div>
+<div class="container-fluid pb-3 justify-content-center" id="navheading">
+    <nav class="navbar navbar-expand-lg navbar-inverse" id="navmenu">
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav" id="navtop">
+            <li class="nav-item mx-4 active">
+              <a id="item" class="itemhover" onclick="activechoice();" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a id="item" class="itemhover" onclick="activechoice();" href="about.html">About</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a id="item" class="itemhover" onclick="activechoice();" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item mx-4">
+              <a id="item" class="itemhover" onclick="activechoice();" href="pastposition.html">Past Positions</a>
+          </li>
+          </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container shadow mb-4 bg-white rounded" id="line">
+</div>
+
+<div class="container">
+  <div id="page-content-wrapper">
+    <div class="container-fluid" style="padding-bottom:150px">
+      <div class="row flex-nowrap" id="textcontainer">
+        <div class="col-sm-4 text-center mt-4">
+          <a id="links" href="sociolla.html" target="_blank">Sociolla replica</a>
+          <img class="shadow p-2 mb-4 bg-white rounded" src="img/sociolla.PNG" alt="" style="width: 200px; height: 200px">
+        </div>
+        <div class="col-sm-4 text-center mt-4">
+          <a id="links" href="w3school.html" target="_blank">
+          W3School Replica
+          <img class="shadow p-2 mb-4 bg-white rounded" src="img/w3school.PNG" alt="" style="width: 200px; height: 200px">
+        </a></div>
+        <div class="col-sm-4 text-center mt-4">
+          <a id="links" href="homepage.html" target="_blank">Twitch Replica</a>
+          <img class="shadow p-2 mb-4 bg-white rounded" src="img/twitch.PNG" alt="" style="width: 200px; height: 200px">
+        </div>
+    </div>
+  </div>  
+  </div>
+  </div>
+
+<div class="container shadow mb-4 bg-white rounded" id="line"></div>
+
+
+<footer class="text-center text-lg-start bg-light text-muted">
+
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with me on social networks:</span>
+      </div>
+      <div>
+        <div class="row flex-nowrap">
+          <div class="col-sm-auto">
+        <a href="https://www.facebook.com/profile.php?id=100010238536507" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"> <img src="img/facebook_black_logo_icon_147136.png" style="height: 30px; width:30px" alt=""></i>
+        </a>
+        </div>
+        <div class="col-sm-auto">
+        <a href="https://twitter.com/Kaishar07" class="me-4 text-reset">
+          <i class="fab fa-twitter"> <img src="img/sl_z_072523_61700_01.jpg" style="height: 30px; width:30px" alt=""></i>
+        </a>
+      </div>
+        <div class="col-sm-auto">
+        <a href="https://www.instagram.com/w_bunaidy/?hl=en" class="me-4 text-reset">
+          <i class="fab fa-instagram"><img src="img/instagram.png" style="height: 30px; width:30px" alt=""></i>
+        </a>
+      </div>
+        <div class="col-sm-auto">
+        <a href="https://www.linkedin.com/in/william-evan-bunaidy-493045230/" class="me-4 text-reset">
+          <i class="fab fa-linkedin"><img src="img/linkedin.png" style="height: 30px; width:30px"></i>
+        </a>
+      </div>
+        <div class="col-sm-auto">
+        <a href="https://github.com/Kaishar727" class="me-4 text-reset">
+          <i class="fab fa-github"><img src="img/github-mark.png" style="height: 30px; width:30px"></i>
+        </a>
+      </div>
+      <div class="col-sm-auto">
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google">williambunaidy3@gmail.com</i>
+        </a>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start ">
+    <div class="text-center p-4">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Bunaidy Corps</a>
+    </div>
+
+  </footer>
+
+
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
